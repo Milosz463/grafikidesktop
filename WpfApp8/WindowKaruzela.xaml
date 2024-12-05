@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="WindowKaruzela" Height="450" Width="800">
     
-    <UniformGrid Columns="3">
+    <UniformGrid Columns="3" Height="400">
         
             <Button Click="Button_Click">
         <Image Height="50" Width="50" Source="strzalka1.jpg"></Image>
@@ -17,6 +17,11 @@
         <Button Click="Button_Click_1">
             <Image Height="50" Width="50" Source="strzalka2.jpg"></Image>
         </Button>
+        <StackPanel>
+            <Button Click="Button_Click_2">Polub</Button>
+            <TextBlock HorizontalAlignment="Center" x:Name="polubienia">Polubienia: 0</TextBlock>
+            <Button Click="Button_Click_3">odlub</Button>
 
+        </StackPanel>
     </UniformGrid>
 </Window>

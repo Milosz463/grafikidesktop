@@ -20,16 +20,17 @@ namespace WpfApp8
     /// </summary>
     public partial class WindowKaruzela : Window
     {
-        List<string> listaObrazow = new List<string>();
+        List<Obraz> listaObrazow = new List<Obraz>();
         int liczba { get; set; }
 
         public WindowKaruzela()
         {
             InitializeComponent();
-            listaObrazow.Add("sigma.jpg");
-            listaObrazow.Add("sigma2.jpg");
-            listaObrazow.Add("sigma3.jpg");
-            listaObrazow.Add("sigma4.jpg");
+            listaObrazow.Add(new Obraz("sigma.jpg"));
+            listaObrazow.Add(new Obraz("sigma2.jpg"));
+            listaObrazow.Add(new Obraz("sigma3.jpg"));
+            listaObrazow.Add(new Obraz("sigma4.jpg"));
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -66,7 +67,21 @@ namespace WpfApp8
         }
         void wyswietlObraz(int i)
         {
-            image.Source = new BitmapImage(new Uri(listaObrazow[i], UriKind.Relative));
+            image.Source = new BitmapImage(new Uri(listaObrazow[i].UrlObrazka, UriKind.Relative));
+            polubienia.Text = listaObrazow[i].liczbaPolubien.ToString();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            listaObrazow[liczba].liczbaPolubien++;
+            wyswietlObraz(liczba);
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            listaObrazow[liczba].liczbaPolubien--;
+            wyswietlObraz(liczba);
+
         }
     }
 }
