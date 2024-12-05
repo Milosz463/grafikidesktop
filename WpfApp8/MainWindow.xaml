@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <Image Source="../../../sigma.jpg" Height="300" x:Name="image"></Image>
+        <Image Source="sigma.jpg" Height="300" x:Name="image"></Image>
         <Button Click="Button_Click">Zmien obraz</Button>
         <Button Click="Button_Click_1">Losuj obraz</Button>
     </StackPanel>

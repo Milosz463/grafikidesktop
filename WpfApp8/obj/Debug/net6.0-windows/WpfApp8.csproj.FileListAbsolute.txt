@@ -19,3 +19,5 @@ C:\Users\programista\Documents\hfghgfhgfh\c++\WpfApp8\WpfApp8\obj\Debug\net6.0-w
 C:\Users\programista\Documents\hfghgfhgfh\c++\WpfApp8\WpfApp8\obj\Debug\net6.0-windows\WpfApp8.pdb
 C:\Users\programista\Documents\hfghgfhgfh\c++\WpfApp8\WpfApp8\obj\Debug\net6.0-windows\WpfApp8.genruntimeconfig.cache
 C:\Users\programista\Documents\hfghgfhgfh\c++\WpfApp8\WpfApp8\obj\Debug\net6.0-windows\ref\WpfApp8.dll
+C:\Users\programista\Documents\hfghgfhgfh\c++\WpfApp8\WpfApp8\obj\Debug\net6.0-windows\WindowKaruzela.g.cs
+C:\Users\programista\Documents\hfghgfhgfh\c++\WpfApp8\WpfApp8\obj\Debug\net6.0-windows\WindowKaruzela.baml
